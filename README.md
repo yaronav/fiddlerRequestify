@@ -4,7 +4,7 @@ Fiddler (Web Debugging Proxy) Extension that enables you to tranform HTTP reques
 ![Fiddler extension screenshot](https://github.com/yaronav/fiddlerRequestify/raw/master/Fiddler.PNG)
 
 
-# Complied Version
+# Compiled Version
 
 https://github.com/yaronav/fiddlerRequestify/raw/master/requestify.zip
 
