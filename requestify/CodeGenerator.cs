@@ -50,9 +50,10 @@ namespace requestify
             }
 
             if (requestMethod == "post")
-            {
-                string hexString = BitConverter.ToString(session.RequestBody).Replace("-", "");
-                WriteLine(sb, string.Format($"data = '{hexString}'.decode('hex')", hexString));
+            {                
+                var payload = UnicodeEncoding.UTF8.GetString(session.RequestBody);
+                WriteLine(sb, string.Format($"data = b'{payload}'", payload));
+                
             }
             else
             {
