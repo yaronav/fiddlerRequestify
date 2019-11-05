@@ -60,7 +60,7 @@ namespace requestify
                 WriteLine(sb, "data = {}");
             }
 
-            WriteLine(sb, string.Format($"requests.{requestMethod}('{fullUrl}',headers = headers,cookies = cookies,data=data)", requestMethod, fullUrl));
+            WriteLine(sb, string.Format($"requests.{requestMethod}('{fullUrl}',headers = headers,cookies = jar,data=data)", requestMethod, fullUrl));
             return sb.ToString().TrimEnd();
         }
 
